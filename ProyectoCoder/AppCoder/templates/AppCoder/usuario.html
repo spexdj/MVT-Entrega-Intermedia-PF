@@ -1,0 +1,27 @@
+{% extends 'Appcoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aqui va lo que cambia, y lo asociado a esta vista :) -->
+    <h1>Usuarios</h1>
+    <p>Aca va la info de los Usuarios</p>
+
+    <p>
+        Test de Usuarios
+    </p>
+
+
+    Ingrese un Usuario:
+    <br>
+    <form action=""     method="post">{% csrf_token %}
+        <table>
+            {{miFormulario3.as_table}}
+        </table>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+{% endblock %}

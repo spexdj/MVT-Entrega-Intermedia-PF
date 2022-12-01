@@ -1,0 +1,15 @@
+{% extends 'Appcoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    Nombre Post: {{post_nombre}}
+    <br>
+    Posts:
+    {%for post in posts%}
+        {{post.post_nombre}}
+        <br>
+    {%endfor%}
+
+{% endblock %}
