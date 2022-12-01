@@ -119,5 +119,5 @@ def buscarpost(request):
 
 def buscar2(request):
     post_views = request.GET['post_nombre']
-    post_todos = Post.objects.filter(post=post_views)
+    post_todos = Post.objects.filter(post_nombre=post_views)
     return render(request,'AppCoder/resultadoPost.html',{"post_nombre":post_views, "posts": post_todos})
