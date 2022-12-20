@@ -31,3 +31,7 @@ Desarrollo de Web Django con patron MVT subido a Github
 * Verificar categoria Api ```/AppCoder/categoriaApi/```
 * Busqueda Curso        ```/AppCoder/busquedaCurso/```
 * Busqueda Post         ```/AppCoder/busquedaPost/```
+
+## SUPERUSUARIO:
+* User: admin
+* Pass: 12345 (o 1234 no recuerdo cual de los dos)
