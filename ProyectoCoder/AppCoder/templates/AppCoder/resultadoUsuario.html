@@ -1,0 +1,15 @@
+{% extends 'Appcoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    Nombre Usuario: {{usuario_nombre}}
+    <br>
+    Mail Usuario:
+    {%for usuario in usuarios%}
+        {{usuario.usuario_mail}}
+        <br>
+    {%endfor%}
+
+{% endblock %}

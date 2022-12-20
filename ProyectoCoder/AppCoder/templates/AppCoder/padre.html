@@ -21,11 +21,21 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
-                <a class="navbar-brand" href="{% url 'Cursos' %}">Cursos</a>
+                <a class="navbar-brand" href="{% url 'Buscar' %}">Buscar Cursos</a>
+                <a class="navbar-brand" href="{% url 'BusquedaPost' %}">Buscar Post</a> 
+                <a class="navbar-brand" href="{% url 'BusquedaCategoria' %}">Buscar Categoria</a>
+                <a class="navbar-brand" href="{% url 'BusquedaUsuario' %}">Buscar Usuario</a>                                                                  
                 <!-- #####################################  -->
-                <a class="navbar-brand" href="{% url 'Post' %}">Post</a>
-                <a class="navbar-brand" href="{% url 'Usuario' %}">Usuario</a>
-                <a class="navbar-brand" href="{% url 'Categoria' %}">Categoria</a>                
+                <a class="navbar-brand" href="{% url 'List' %}">Cursos</a>
+                <a class="navbar-brand" href="{% url 'Listpost' %}">Post</a>
+                <a class="navbar-brand" href="{% url 'Listusuario' %}">Usuario</a>
+                <a class="navbar-brand" href="{% url 'Listcategoria' %}">Categoria</a>                
+                <!-- #####################################  -->
+                <a class="btn btn-primary" href="{% url 'New' %}">Nuevo Curso</a>
+                <a class="btn btn-primary" href="{% url 'Newcategoria' %}">Nueva Categoria</a>
+                <a class="btn btn-primary" href="{% url 'Newusuario' %}">Nuevo Usuario</a>
+                <a class="btn btn-primary" href="{% url 'Newpost' %}">Nuevo Post</a>
+                <!-- #####################################  -->
 
                 <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>

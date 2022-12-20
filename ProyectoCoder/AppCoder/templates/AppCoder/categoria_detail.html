@@ -1,0 +1,11 @@
+{% extends 'Appcoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+Nombre: {{categoria.categoria_nombre}}
+Descripcion: {{categoria.categoria_descripcion}}
+
+<a href="{%url 'Listcategoria'%}">Regresar</a>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'Appcoder/padre.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    Nombre Categoría: {{categoria_nombre}}
+    <br>
+    Descripción Categoría:
+    {%for categoria in categorias%}
+        {{categoria.categoria_descripcion}}
+        <br>
+    {%endfor%}
+
+{% endblock %}
